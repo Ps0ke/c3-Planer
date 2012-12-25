@@ -2,7 +2,7 @@
 
 require_once('xml2json.php');
 
-$xmlStringContents = file_get_contents('http://events.ccc.de/congress/2010/Fahrplan/schedule.en.xml');
+$xmlStringContents = file_get_contents('http://events.ccc.de/congress/2012/Fahrplan/schedule.en.xml');
 $jsonContents = xml2json::transformXmlStringToJson($xmlStringContents);
 
 if($jsonContents) {
